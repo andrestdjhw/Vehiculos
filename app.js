@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var vehiculosRouter = require('./routes/vehiculos');
-var vehiculosAPIRouter = require('./routes/api/vehiculosapi');
+var vehiculosAPIRouter = require('./routes/api/vehiculosapi'); 
 
 
 var app = express();
@@ -44,5 +44,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+console.log("HolaMundo");
 
 //fin 
