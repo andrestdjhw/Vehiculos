@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+    a(href='/vehiculos') Regresar
+
+    br
+    br
+    br
+
+    h1 Modificar Vehiculo
+
+    br
+    br
+
+    form(action=`/vehiculos/${vehi.id}/update` method='post')
+        label(for='id') Id:
+        input#id(type='text' name='id' value=vehi.id)
+        br
+        label(for='propietario') Propietario:
+        input#id(type='text' name='propietario' value=vehi.propietario)
+        br
+        label(for='color') Color:
+        input#color(type='text' name='color' value=vehi.color)
+        br
+        label(for='marca') Marca:
+        input#marca(type='text' name='marca' value=vehi.marca)
+        br
+        label(for='modelo') Modelo:
+        input#modelo(type='text' name='modelo' value=vehi.modelo)
+        br
+        br
+        input.btn(type='submit' value='Guardar')
