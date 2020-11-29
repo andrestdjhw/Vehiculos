@@ -1,0 +1,27 @@
+*********************************************APi que muestra Datos en ejecucion del programa*********************************************
+Ver Datos
+http://127.0.0.1:3000/api/vehiculosapi
+Insertar Datos
+http://127.0.0.1:3000/api/vehiculosapi/create
+Eliminar
+http://127.0.0.1:3000/api/vehiculosapi/delete
+Editar
+http://127.0.0.1:3000/api/vehiculosapi/update
+*********************************************APi que muestra Datos en MySql Workbench*********************************************
+Ver Datos
+http://localhost:3000/api2/get_vehiculos
+Ver Datos por ID
+http://localhost:3000/api2/get_vehiculo?id=5
+Insertar
+http://localhost:3000/api2/insert_vehiculo
+Eliminar
+http://localhost:3000/api2/delete_vehiculo?id=11
+*********************************************APi que muestra Datos en MongoDB Compass*********************************************
+Ver Registros
+http://localhost:3000/api3/get_carros
+Registrar Datos
+http://localhost:3000/api3/insert_carro
+Editar
+http://localhost:3000/api3/update_carro
+Eliminar
+http://localhost:3000/api3/delete_carro?id=5fbd7a28768b603cf0e0b787
