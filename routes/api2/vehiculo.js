@@ -39,9 +39,9 @@ router.get('/get_vehiculo', (req, res, next)=>{
 
 //Insertar un nuevo vehiculo
 router.post('/insert_vehiculo', (req, res, next)=>{
-    var query= 'INSERT INTO `prueba`.`vehiculos` (`propietario`, `color`, `marca`, `modelo`) VALUES (?, ?, ?, ?)';
-    var values= [req.body.id, req.body.propietario,
-                req.body.color, req.body.marca, req.body.modelo];
+    var query= 'INSERT INTO vehiculos (propietario, color, marca, modelo) VALUES (?, ?, ?, ?)';
+    var values= [ req.body.propietario, req.body.color, 
+                 req.body.marca, req.body.modelo];
     con.query(query, values,  (err, result, field)=>{
         if(err){
             next(err);
@@ -57,7 +57,7 @@ router.delete('/delete_vehiculo', (req, res, next)=>{
     var values= [req.query.id];
     con.query(query, values,  (err, result, field)=>{
         if(err){
-            next(err);
+            next(err); 
         }else{
             res.status(200).json(result); 
         }
@@ -65,4 +65,4 @@ router.delete('/delete_vehiculo', (req, res, next)=>{
 });
 
 
-module.exports= router;
+module.exports= router; 

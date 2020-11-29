@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 var vehiculosRouter = require('./routes/vehiculos');
 var vehiculosAPIRouter = require('./routes/api/vehiculosapi'); 
 var vehiculosAPI2Router = require('./routes/api2/vehiculo'); 
-
+var vehiculosAPI3Router = require('./routes/api3/vehiculo');
 
 var app = express();
 
@@ -28,6 +28,10 @@ app.use('/users', usersRouter);
 app.use('/vehiculos', vehiculosRouter);
 app.use('/api/vehiculosapi', vehiculosAPIRouter);
 app.use('/api2/', vehiculosAPI2Router);
+app.use('/api3/', vehiculosAPI3Router);
+
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
