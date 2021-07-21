@@ -15,5 +15,4 @@ const Carro = new Schema({
 const model = mongoose.model('Vehiculos', Carro);
 
 module.exports = model; 
-
-
+ 
